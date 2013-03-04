@@ -11,7 +11,7 @@ namespace CalculatorApp
             var calculator = new Calculator(new DefaultParser(), x => x.Add(Operator.Create<ModOperation>("%", Priority.Middle)));
             for (; ; )
             {
-                Console.Write(">");
+                Console.Write("> ");
                 var expression = Console.ReadLine();
                 if ("q" == expression) break;
                 string result = String.Empty;
